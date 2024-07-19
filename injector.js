@@ -1,3 +1,4 @@
+// Для использования Resource Override, если urlFixed не работает.
 if (location.hostname === 'hamsterkombatgame.io') {
   const original_indexOf = Array.prototype.indexOf
   Array.prototype.indexOf = function (...args) {
@@ -10,5 +11,3 @@ if (location.hostname === 'hamsterkombatgame.io') {
       return original_indexOf.apply(this, args)
   }
 }
-
-// Resource Override 
