@@ -6,36 +6,9 @@ function clearConsole() {
 }
 
 function click() {
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
-  button.dispatchEvent(new PointerEvent("pointerup"));
+  for (let i = 0; i < 30; i++) {
+    button.dispatchEvent(new PointerEvent("pointerup"));
+  }
   let currentDate = new Date();
   console.log("30 кликов каждые 30 секунд: ", currentDate);
 }
@@ -43,3 +16,50 @@ function click() {
 setInterval(click, 30000);
 // Чистит консоль в браузере каждые 35 секунд, чтобы не засорять.
 setInterval(clearConsole, 35000);
+
+// oldfashion code
+// const button = document.querySelector(".user-tap-button");
+
+// function clearConsole() {
+//     console.clear();
+// }
+
+// function click() {
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   button.dispatchEvent(new PointerEvent("pointerup"));
+//   let currentDate = new Date();
+//   console.log("30 кликов каждые 30 секунд: ", currentDate);
+// }
+
+// setInterval(click, 30000);
+// // Чистит консоль в браузере каждые 35 секунд, чтобы не засорять.
+// setInterval(clearConsole, 35000);
+
