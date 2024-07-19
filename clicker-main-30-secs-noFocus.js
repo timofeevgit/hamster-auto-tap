@@ -14,8 +14,8 @@ function click() {
 }
 
 setInterval(click, 30000);
-// Чистит консоль в браузере каждые 35 секунд, чтобы не засорять.
-setInterval(clearConsole, 35000);
+// Чистит консоль в браузере каждые 90 секунд, чтобы не засорять.
+setInterval(clearConsole, 90000);
 
 // oldfashion code
 // const button = document.querySelector(".user-tap-button");
